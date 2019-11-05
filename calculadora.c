@@ -9,11 +9,13 @@ void soma()
     menu(); 
 }
 
-void subtrai()
-{
+void subtrai(int op1, int op2){
     //todo
+    int result = 0;
+    result = op1 - op2;
+    printf("O resultado da subtracao e:%d\n", result);
     system ("pause");
-    system("cls"); 
+    system("cls");
     menu();
 }
 
@@ -55,7 +57,11 @@ void menu()
         break; 
 
         case 2:
-            subtrai();
+            printf("Insira o primeiro numero\n");
+            scanf("%d", &n1);
+            printf("Insira o segundo numero\n");
+            scanf("%d", &n2);
+            subtrai(n1,n2);
         break;
 
         case 3:
