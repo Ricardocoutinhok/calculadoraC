@@ -17,9 +17,11 @@ void subtrai()
     menu();
 }
 
-void divide()
-{ 
-    //todo
+void divide(int op1,int op2)
+{
+    int result = 0;
+    result = op1 / op2;
+    printf("O resultado é %d\n",result);
     system ("pause");
     system("cls");
     menu();
@@ -59,7 +61,11 @@ void menu()
         break;
 
         case 3:
-            divide();
+            printf("Escolha o primeiro numero");
+            scanf ("%d", &n1);
+            printf("Escolha o segundo numero");
+            scanf ("%d", &n2);
+            divide(n1,n2);
         break;
 
         case 4:
