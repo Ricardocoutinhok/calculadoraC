@@ -29,9 +29,12 @@ void divide(int op1,int op2)
     menu();
 }
 
-void multiplica()
-{ 
+void multiplica(int op1,int op2)
+{
     //todo
+    int result =0;
+    result=op1*op2;
+    printf("O resultado da multiplicacao e:%d\n", result);
     system ("pause");
     system("cls");
     menu();
@@ -39,7 +42,8 @@ void multiplica()
 
 void menu()
 { 
-    int escolha;
+
+    int escolha, n1, n2;
 
     printf("\t\tBem vindo a calculadora em C\n\n");
 
@@ -75,7 +79,11 @@ void menu()
         break;
 
         case 4:
-            multiplica();
+            printf("Insira o primeiro numero\n");
+            scanf("%d", &n1);
+            printf("Insira o segundo numero\n");
+            scanf("%d", &n2);
+            multiplica(n1,n2);
             break;
 
         case 5:
