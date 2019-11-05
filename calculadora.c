@@ -39,7 +39,7 @@ void multiplica()
 
 void menu()
 { 
-    int escolha;
+    int escolha,n1,n2;
 
     printf("\t\tBem vindo a calculadora em C\n\n");
 
