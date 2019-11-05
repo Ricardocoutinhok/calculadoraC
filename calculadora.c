@@ -1,12 +1,14 @@
 #include <stdio.h> 
 #include <stdlib.h>
 
-void soma()
-{ 
-    //todo
-    system ("pause"); 
-    system("cls"); 
-    menu(); 
+void soma(int op1, int op2)
+{
+    int result = 0;
+    result = op1 + op2;
+    printf("O resultado é %d\n",result);
+    system ("pause");
+    system("cls");
+    menu();
 }
 
 void subtrai()
@@ -51,7 +53,11 @@ void menu()
     switch (escolha)
     {
         case 1: 
-            soma(); 
+            printf("Escolha o primeiro numero");
+            scanf ("%d", &n1);
+            printf("Escolha o segundo numero");
+            scanf ("%d", &n2);
+            soma(n1,n2); 
         break; 
 
         case 2:
